@@ -17,4 +17,7 @@
     <!-- PLatform version in About phone -->
     <string name="platform_version">Platform version</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
 </resources>
