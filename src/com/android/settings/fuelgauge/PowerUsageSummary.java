@@ -35,6 +35,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.widget.TextView;
+import androidx.preference.Preference;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.loader.app.LoaderManager;
@@ -252,6 +253,20 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+
+        // Check availability of Battery Health
+        Preference mDesignedHealthPref = (Preference) findPreference(KEY_DESIGNED_BATTERY_CAPACITY);
+        if (!getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
+            getPreferenceScreen().removePreference(mDesignedHealthPref);
+        }
+        Preference mCurrentHealthPref = (Preference) findPreference(KEY_CURRENT_BATTERY_CAPACITY);
+        if (!getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
+            getPreferenceScreen().removePreference(mCurrentHealthPref);
+        }
+        Preference mCyclesHealthPref = (Preference) findPreference(KEY_BATTERY_CHARGE_CYCLES);
+        if (!getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
+            getPreferenceScreen().removePreference(mCyclesHealthPref);
+        }
     }
 
     @Override
