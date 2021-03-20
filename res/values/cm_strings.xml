@@ -191,4 +191,7 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Configure notifications: Title for advanced notification settings pane -->
+    <string name="advanced_notifications_title">Advanced notification settings</string>
 </resources>
