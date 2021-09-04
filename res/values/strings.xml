@@ -12209,4 +12209,7 @@
 
     <!-- MTKOSP Version -->
     <string name="mtkosp_version">MTKOSP Version</string>
+
+    <!-- MTKOSP Maintainer -->
+    <string name="maintainer">Maintainer</string>
 </resources>
