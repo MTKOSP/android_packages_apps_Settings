@@ -12236,4 +12236,10 @@
 
     <!-- MTKOSP Maintainer -->
     <string name="maintainer">Maintainer</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_hint">Value</string>
+    <string name="seek_value_edit_label">Set value</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
