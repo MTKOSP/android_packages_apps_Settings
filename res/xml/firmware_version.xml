@@ -30,6 +30,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- MTKOSP Version  -->
+    <Preference
+        android:key="MTKOSP_version"
+        android:title="@string/MTKOSP_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MTKOSPVersionPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"

@@ -20,4 +20,7 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- MTKOSP Version -->
+    <string name="MTKOSP_version">MTKOSP version</string>
+
 </resources>
